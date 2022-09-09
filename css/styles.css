@@ -54,6 +54,17 @@ body {
   padding-right: 15px;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /* header */
 
 .page-header {
@@ -329,9 +340,9 @@ body {
   background-color: var(--secondary-white-color);
 }
 
-.card {
+.card-team {
   background-color: var(--primary-white-color);
-  padding: auto;
+  padding-bottom: 30px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
               0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -354,7 +365,7 @@ body {
   margin-right: 30px;
 }
 
-.team-list .title {
+.card-team .title {
   margin-top: 30px;
   margin-bottom: 10px;
 
@@ -364,9 +375,9 @@ body {
   line-height: 1.19;
 }
 
-.team-list .text {
+.card-team .text {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -384,7 +395,7 @@ body {
   justify-content: flex-start;
 }
 
-.adress-footer .footer-item-logo {
+.footer-item-logo {
   display: flex;
   padding-top: 0px;
   margin-bottom: 20px;
@@ -435,6 +446,12 @@ body {
 
 .item .card {
   border: 1px solid var(--card-border-color);
+
+  padding: 24px 20px;
+  /* padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px; */
 }
 
 .portfolio-list .item:nth-child(3n) {
@@ -446,7 +463,7 @@ body {
 }
 
 .portfolio-link .portfolio-title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 4px;
 
   color: var(--title-text-color);
@@ -458,7 +475,7 @@ body {
 
 .portfolio-link .portfolio-text {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 
   color: var(--text-color);
   font-size: 16px;
